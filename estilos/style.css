@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* carousel */
+.contenerdor-carrusel .carousel img{
+    object-fit: cover;
+    object-position: center;
+    height: 90vh;
+}
+.carousel-caption{
+  color: white !important;
+}
+
+a{
+text-decoration: none;
+}
+
+
+/* footer */
+
+.footer-style {
+    padding-top: 50px;
+    background-color: rgb(19, 16, 16);
+}
+footer {
+  color: white;
+}
+footer h3 {
+  margin-bottom: 30px;
+  font-weight: 15;
+}
+footer .footer-above {
+  padding-top: 50px;
+  background-color:#233140;
+}
+footer .footer-col {
+  margin-bottom: 50px;
+}
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #233140;
+}
+/*nosotros*/
+.padre{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "parrafo estudio1"
+    "estudio3 estudio4"
+    "estudio5 estudio6"
+    "estudio2 parrafo1"
+    
+    ;
+}
+.estudio1{
+    grid-area: estudio1;
+}
+.estudio2{
+    grid-area: estudio2;
+}
+.estudio3{
+    grid-area: estudio3;
+}
+.estudio4{
+    grid-area: estudio4;
+}
+.estudio5{
+    grid-area: estudio5;
+}
+.estudio6{
+    grid-area: estudio6;
+}
+.parrafo{
+    grid-area: parrafo;
+    align-self: center;
+    padding: 25px;
+    text-align: justify;
+}
+.parrafo1{
+    grid-area: parrafo1;
+    align-self: center;
+    justify-content: center;
+    
+}
+@media only screen and (max-width: 648px){
+    .padre{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "parrafo"
+        "estudio1"
+        "estudio2"
+        "estudio3"
+        "estudio4"
+        "estudio5"
+        "estudio6"
+        "parrafo1"
+        ;
+        
+    }
+} 
+/* portafolio */
+.peliculas{
+    justify-items: center;
+    align-items: center;
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "peli1 peli2"
+    "peli3 peli4"
+    ;
+  }
+  
+  .peli1{
+    grid-area: peli1;
+  }
+  .peli2{
+    grid-area: peli2;
+  }
+  .peli3{
+    grid-area: peli3;
+  }
+  .peli4{
+    grid-area: peli4;
+  }
+  
+
+  
+  @media only screen and (max-width: 700px){
+    
+    .peliculas{
+      display: grid;
+      grid-template-columns: 2fr;
+      grid-template-rows: 6fr;
+      grid-template-areas:
+      "peli1"
+      "peli2"
+      "peli3"
+      "peli4"
+      ;
+    }
+  }
+
+ 
+.servicios{
+    
+    align-self: center;
+    padding: 100px;
+    text-align: justify;
+}
+
+
+
+
+
+
+

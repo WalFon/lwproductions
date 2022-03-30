@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* footer */
+.footer-style {
+  padding-top: 50px;
+  background-color: #131010;
+}
+
+footer {
+  color: white;
+}
+
+footer h3 {
+  margin-bottom: 30px;
+  font-weight: 15;
+}
+
+footer .footer-above {
+  padding-top: 50px;
+  background-color: #233140;
+}
+
+footer .footer-col {
+  margin-bottom: 50px;
+}
+
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #233140;
+}
+
+/* carousel */
+.contenerdor-carrusel .carousel img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 90vh;
+}
+
+.carousel-caption {
+  color: white !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*nosotros*/
+.padre {
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "parrafo estudio1" "estudio3 estudio4" "estudio5 estudio6" "estudio2 parrafo1";
+}
+
+.estudio1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: estudio1;
+}
+
+.estudio2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: estudio2;
+}
+
+.estudio3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: estudio3;
+}
+
+.estudio4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: estudio4;
+}
+
+.estudio5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: estudio5;
+}
+
+.estudio6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: estudio6;
+}
+
+.parrafo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: parrafo;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 25px;
+  text-align: justify;
+}
+
+.parrafo1 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: parrafo1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 648px) {
+  .padre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "parrafo" "estudio1" "estudio2" "estudio3" "estudio4" "estudio5" "estudio6" "parrafo1";
+  }
+}
+
+/* portafolio */
+.peliculas {
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "peli1 peli2" "peli3 peli4";
+}
+
+.peli1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: peli1;
+}
+
+.peli2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: peli2;
+}
+
+.peli3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: peli3;
+}
+
+.peli4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: peli4;
+}
+
+@media only screen and (max-width: 700px) {
+  .peliculas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+    -ms-grid-rows: 6fr;
+        grid-template-rows: 6fr;
+        grid-template-areas: "peli1" "peli2" "peli3" "peli4";
+  }
+}
+
+.servicios {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 100px;
+  text-align: justify;
+}
+
+.sub {
+  background-color: #dad4d4;
+  text-align: center;
+}
+
+.main {
+  background-color: #f1ecec;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 100px;
+  text-align: justify;
+}
+/*# sourceMappingURL=estilos.css.map */
