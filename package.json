@@ -1,0 +1,24 @@
+{
+    "name": "lwproductions",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "transpile-sass": "sass style.scss/estilos.scss estilos/estilos.css",
+        "transpile-sass:watch": "sass style.scss/estilos.scss estilos/estilos.css --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/WalFon/lwproductions.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/WalFon/lwproductions/issues"
+    },
+    "homepage": "https://github.com/WalFon/lwproductions#readme",
+    "dependencies": {
+        "sass": "^1.50.0"
+    }
+}

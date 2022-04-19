@@ -1,29 +1,40 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+
 /* footer */
 
 .footer-style {
     padding-top: 50px;
-    background-color: rgb(19, 16, 16) ;
+    background-color: rgb(19, 16, 16);
 }
+
 footer {
-  color: white;
+    color: white;
 }
+
 footer h3 {
-  margin-bottom: 30px;
-  font-weight: 15;
+    margin-bottom: 30px;
+    font-weight: 15;
 }
+
 footer .footer-above {
-  padding-top: 50px;
-  background-color:#233140;
+    padding-top: 50px;
+    background-color: #233140;
 }
+
 footer .footer-col {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
+
 footer .footer-below {
-  padding: 25px 0;
-  background-color: #233140;
+    padding: 25px 0;
+    background-color: #233140;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
 }
